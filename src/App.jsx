@@ -5,7 +5,7 @@ function App() {
   return (
     <main className="bg-[#00302E] w-full h-screen">
       {/* <HomePage /> */}
-      {/* <Navbar/> */}
+      {Navbar}
       {/* <Hero/> */}
       {/* <About/> */}
       {/* <Contact/> */}
