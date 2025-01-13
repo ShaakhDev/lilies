@@ -10,6 +10,7 @@ function App() {
       {/* <About/> */}
       {/* <Contact/> */}
       {/* <Footer/> */}
+      <Contact/>
     </main>
   );
 }
