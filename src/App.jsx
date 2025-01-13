@@ -1,8 +1,9 @@
-import "./App.css";
+// import "./App.css";
 
 import { Navbar } from "./pages/home/navbar";
 
 import { Footer } from "./pages";
+import Contact from "./pages/home/components/contact";
 
 // import { HomePage } from "./pages/home/home";
 
@@ -16,10 +17,9 @@ function App() {
       {/* <Contact/> */}
 
       {/* <Footer/> */}
-      <Contact/>
+      <Contact />
 
       <Footer />
-
     </main>
   );
 }
