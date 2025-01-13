@@ -10,7 +10,12 @@ function App() {
       {/* <Hero/> */}
       {/* <About/> */}
       {/* <Contact/> */}
+
+      {/* <Footer/> */}
+      <Contact/>
+
       <Footer />
+
     </main>
   );
 }
