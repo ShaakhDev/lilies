@@ -1,5 +1,6 @@
 import React from 'react'
-
+import playmarket from "../../../public/Google Play Badge.svg";
+import appstore from "../../../public/App Store Badge.svg";
 export const Hero = () => {
   return <>
     <section className="bg-[#00302E] h-auto  flex pt-[161px] ">
@@ -19,13 +20,13 @@ export const Hero = () => {
               </p>
             </div>
             <div className="flex gap-3">
-              <img className="w-[135px]" src="./img/Layer.png" alt="" />
-              <img className="w-[135px]" src="./img/app.png" alt="" />
+              <img src={playmarket} alt="" />
+              <img src={appstore} alt="" />
             </div>
           </div>
           <div>
             <div>
-              <img className="w-[400px]" src="./img/img.png" alt="" />
+              <img className="w-[400px]" src="./img.png" alt="" />
             </div>
           </div>
         </div>
