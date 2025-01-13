@@ -1,4 +1,5 @@
 import "./App.css";
+import { Hero } from "./pages/hero/hero";
 // import { HomePage } from "./pages/home/home";
 
 function App() {
@@ -6,9 +7,9 @@ function App() {
     <main className="bg-[#00302E] w-full h-screen">
       {/* <HomePage /> */}
       {/* <Navbar/> */}
-      {/* <Hero/> */}
-      {/* <About/> */}
-      {/* <Contact/> */}
+      <Hero/>
+      {/* <Contact/> */
+      {/* <About/> */}}
       {/* <Footer/> */}
     </main>
   );
