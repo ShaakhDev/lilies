@@ -1,5 +1,9 @@
 import "./App.css";
+
 import { Navbar } from "./pages/home/navbar";
+
+import { Footer } from "./pages";
+
 // import { HomePage } from "./pages/home/home";
 
 function App() {
@@ -10,7 +14,7 @@ function App() {
       {/* <Hero/> */}
       {/* <About/> */}
       {/* <Contact/> */}
-      {/* <Footer/> */}
+      <Footer />
     </main>
   );
 }
