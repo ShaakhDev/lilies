@@ -14,8 +14,11 @@ function App() {
       {/* <HomePage /> */}
       <Navbar />
       {/* <Navbar/> */}
-      <Hero />
+
+      <Hero/>
+
       <Foods />
+
       {/* <Contact/> */}
       {/* <About/> */}
 
