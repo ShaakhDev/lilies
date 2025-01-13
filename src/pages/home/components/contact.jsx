@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <div className="w-full flex justify-center items-center min-h-screen py-16 px-8 bg-[#00302E]">
-      <div className="w-full max-w-4xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-6">
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center md:justify-between gap-6">
         <div className="text-center md:text-left">
           <h1 className="text-3xl lg:text-4xl font-bold text-[#f3d6b6] mb-4">
             Get notified when we update!
