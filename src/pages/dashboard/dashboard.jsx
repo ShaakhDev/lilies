@@ -1,3 +1,4 @@
+import Layout from "../../layout";
 import {
   Accordion,
   AccordionContent,
@@ -6,5 +7,9 @@ import {
 } from "../../components/ui/accordion";
 
 export const Dashboard = () => {
-  return <div className=""></div>;
+  return (
+    <Layout>
+      <h1>Dashboard</h1>
+    </Layout>
+  );
 };
