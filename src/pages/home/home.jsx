@@ -6,7 +6,7 @@ import { Navbar } from "./navbar";
 
 export const HomePage = () => {
   return (
-    <main className="bg-[#00302E] w-full h-screen">
+    <main className="bg-[#00302E] w-full h-screen  ">
       <Navbar />
       <Hero />
       <Foods />

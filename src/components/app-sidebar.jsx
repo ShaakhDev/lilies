@@ -10,6 +10,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "../components/ui/sidebar";
+import { Link, Links } from "react-router-dom";
 
 const items = [
   {
@@ -19,41 +20,41 @@ const items = [
   },
   {
     title: "Your profile",
-    url: "#",
+    url: "/profile",
     icon: User,
   },
   {
     title: "Orders",
-    url: "#",
+    url: "/orders",
     icon: Calendar,
   },
   {
     title: "Your cart",
-    url: "#",
+    url: "/cart",
     icon: Bookmark,
   },
 ];
 
 export function AppSidebar() {
   return (
-    <Sidebar>
+    <Sidebar className="bg=[#FBFBFB]">
       <SidebarHeader>
-        <div className="flex items-center justify-center h-12 gap-3">
+        <Link to="/"className="flex items-center justify-center h-12 gap-3 my-[90px]">
           <img src="logo.png" className="w-12" />
           <p className="font-bold text-2xl">Lilies</p>
-        </div>
+        </Link>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup />
         <SidebarGroupContent>
-          <SidebarMenu>
+          <SidebarMenu className="p-[26px]">
             {items.map((item) => (
               <SidebarMenuItem key={item.title}>
                 <SidebarMenuButton asChild>
-                  <a href={item.url}>
+                  <Link className="py-7" to={item.url}>
                     <item.icon />
-                    <span>{item.title}</span>
-                  </a>
+                    <span className=" text-[16px]">{item.title}</span>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             ))}

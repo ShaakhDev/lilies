@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../../context/mode";
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -19,17 +20,22 @@ export function Navbar() {
           onClick={handleToggle}
           className={`w-5 h-5 rounded-full bg-white mr-4 ${
             theme === "dark" ? "bg-white" : "bg-black"
-          }`}
-        ></button>
-        <h1 className="mr-4 text-white hover:text-gg ease transition-all duration-700">
+          }`}></button>
+        <Link
+          to="/"
+          className="mr-4 text-white hover:text-gg ease transition-all duration-700">
           Home
-        </h1>
-        <h1 className="mr-4 text-white hover:text-gg ease  transition-all duration-700 ">
+        </Link>
+        <Link
+          to="/login"
+          className="mr-4 text-white hover:text-gg ease  transition-all duration-700 ">
           Login
-        </h1>
-        <button className=" border-gg bg-gg px-6 py-2 rounded-[10px] text-gr  font-bold hover:text-white transition-all duration-700 ">
+        </Link>
+        <Link
+          to="/signup"
+          className=" border-gg bg-gg px-6 py-2 rounded-[10px] text-gr  font-bold hover:text-white transition-all duration-700 ">
           Sign Up
-        </button>
+        </Link>
       </div>
     </div>
   );

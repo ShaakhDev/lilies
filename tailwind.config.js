@@ -10,6 +10,7 @@ module.exports = {
         darkBlue: "#0B0D17",
         white: "#F4F5F7",
         white2: "#EEEFF4",
+        darkGreen: "#00302E",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
