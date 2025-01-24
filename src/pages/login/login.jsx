@@ -21,7 +21,10 @@ export const Login = () => {
 
   const onSubmit = async () => {
     try {
-      const response = await api.post("/sign-in", JSON.stringify(formdata));
+      const response = await api.post(
+        "/auth/sign-in",
+        JSON.stringify(formdata)
+      );
       console.log(response.data);
       const token = response.data.token;
       localStorage.setItem("token", token);

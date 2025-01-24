@@ -22,7 +22,10 @@ export const Signup = () => {
 
   const onSubmit = async () => {
     try {
-      const response = await api.post("/sign-up", JSON.stringify(formdata));
+      const response = await api.post(
+        "/auth/sign-up",
+        JSON.stringify(formdata)
+      );
       console.log(response.data);
       if (response.data.success) {
         navigate("/login");
