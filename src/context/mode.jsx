@@ -3,17 +3,17 @@ import { createContext, useState } from "react";
 export const ThemeContext = createContext(null);
 
 export const ThemeProvider = ({ children }) => {
-  const theme = localStorage.getItem("theme") || "light";
-  const [currentTheme, setCurrentTheme] = useState(theme);
+  const [isDark, setIsDark] = useState(false);
 
   const toggleTheme = () => {
-    const newTheme = currentTheme === "light" ? "dark" : "light";
-    setCurrentTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
+    setIsDark(!isDark);
+    document.documentElement.classList.toggle("dark");
   };
 
   return (
-    <ThemeContext.Provider value={{ theme: currentTheme, toggleTheme }}>
+    <ThemeContext.Provider
+      value={{ theme: isDark ? "dark" : "light", toggleTheme }}
+    >
       {children}
     </ThemeContext.Provider>
   );
