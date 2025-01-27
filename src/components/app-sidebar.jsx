@@ -41,7 +41,7 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarHeader>
         <div className="flex items-center justify-center h-12 gap-3">
-          <img src="logo.png" className="w-12" />
+          <img src="/logo.png" className="w-12" />
           <p className="font-bold text-2xl">Lilies</p>
         </div>
       </SidebarHeader>

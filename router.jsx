@@ -1,5 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import { Cart, HomePage, Orders, Profile, Dashboard } from "@/pages";
+import {
+  Cart,
+  HomePage,
+  Orders,
+  Profile,
+  Dashboard,
+  ProductDetail,
+} from "@/pages";
 import Layout from "@/layout";
 import { Login } from "@/pages/login";
 import { Signup } from "@/pages/signup";
@@ -20,6 +27,7 @@ export const AppRouter = () => {
         }
       >
         <Route path="dashboard" element={<Dashboard />} />
+        <Route path="product/:id" element={<ProductDetail />} />
         <Route path="profile" element={<Profile />} />
         <Route path="cart" element={<Cart />} />
         <Route path="orders" element={<Orders />} />
